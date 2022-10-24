@@ -1,2 +1,2 @@
-# CreditCardFraudModel
-Second capstone 
+# Credit Card Fraud Model
+
