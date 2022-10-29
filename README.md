@@ -1,2 +1,2 @@
-# Credit Card Fraud Model
+# Synthetic Fraud Model
 
