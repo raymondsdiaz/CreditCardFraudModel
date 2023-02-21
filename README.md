@@ -3,7 +3,7 @@
 ## Source of Data
 This dataset was retrieved from https://www.kaggle.com/datasets/ealaxi/paysim1
 
-## Problem statement formation
+## Problem statement
 
 How can we develop a fraud detection model that has a low false positive rate on
 synthetic data generated from mobile money transactions in Africa for use in a
