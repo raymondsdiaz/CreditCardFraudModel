@@ -94,7 +94,9 @@ After investigating these numbers, we can see that the recall and f1-score are n
 
 (NeighbourhoodCleaningRule)
 
-The first classification matrix is a result of SMOTE oversampling. SMOTE is a We can see that oversampling the file to a 50/50 label distribution does not produce a good result. The second classification matrix is an undersampling technique called Neighbourhood Cleaning Rule. This technique essentially removes noisy samples from the dataset through the nearest neighbors method.
+The first classification matrix is a result of SMOTE oversampling. SMOTE is a sampling tgechnique that selects samples by utilizing K nearest neighbors to randomly select a neighbor and generate a synthetic example between two examples in the spac. We can see that oversampling the file to a 50/50 label distribution does not produce a good result. 
+
+The second classification matrix is an undersampling technique called Neighbourhood Cleaning Rule, which combines both condensed nearest neighbor and edited nearest neighbors to remove noisy or ambiguous samples. This technique essentially removes noisy samples from the dataset through the nearest neighbors method.
 
 ## Final Thoughts 
 
