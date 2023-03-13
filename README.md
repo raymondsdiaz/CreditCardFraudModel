@@ -28,7 +28,7 @@ The dataset contains the following columns below:
 
 There was not much data cleansing or wrangling needed as the dataset contained no missing values. 
 
-(corr chart here)
+!(https://github.com/raymondsdiaz/SyntheticFraudModel/blob/main/README_files/correlation.jpg)
 
 After doing some initial analysis, I decided that the features to model around for the isFraud flag would be the amount, old and new balance origination/destination as well as the transaction type.
 
@@ -36,11 +36,11 @@ After doing some initial analysis, I decided that the features to model around f
 
 As previously mentioned, the preferred target variable for this dataset is isFraud. The reason why it is not isFlaggedFraud is because there are only 14 transactions that are classified with that label and they also have the isFraud flag of 1. The amount feature is the highest performing feature with a correlation of 0.077 to the isFraud flag.
 
-(distribution img here)
+!(https://github.com/raymondsdiaz/SyntheticFraudModel/blob/main/README_files/distribution.jpg)
 
 When investigating the distribution of the amount feature, we can see the distribution is decently right-skewed where the max value of amount was close to 100 million dollars. One thing that stood out the most was analyzing the mean and standard deviation of the amount field.
 
-(fraud img here)
+!(https://github.com/raymondsdiaz/SyntheticFraudModel/blob/main/README_files/fraud.jpg)
 
 As you can see above, the mean of the amount for the isFraud label is actually $1,467,967 and the standard deviation being $2,404,252. Additionally, the fraud rate for this simulated dataset is only 0.1% which means that this is a heavily imbalanced dataset which will require some form of oversampling or undersampling to compensate. 
 
@@ -52,13 +52,13 @@ There are four approaches I took to modeling around this dataset - Logistic Regr
 
 The worst performer of the four approaches was logistic regression as seen below. 
 
-(regression model here)
+!(https://github.com/raymondsdiaz/SyntheticFraudModel/blob/main/README_files/regression.jpg)
 
 As you can see the overall R-Squared was only 0.181, which indicates that a logistic regression model is not the best model for this dataset. 
 
 The next model I wanted to experiment was with a random forest classifier. After utilizing the bare minimum parameters, I plotted the ROC AUC curve and you can see that I ended up with a 0.99. After seeing these numbers, it’s clear that utilizing the ROC AUC as a performance metric did not make sense.
 
-(auc figure here)
+!(https://github.com/raymondsdiaz/SyntheticFraudModel/blob/main/README_files/auc.jpg)
 
 So instead of using the ROC AUC, let's take a look at the classification matrix and see what numbers we find there.
 
