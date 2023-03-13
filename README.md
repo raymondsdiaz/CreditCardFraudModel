@@ -30,7 +30,7 @@ There was not much data cleansing or wrangling needed as the dataset contained n
 
 ![image](https://github.com/raymondsdiaz/SyntheticFraudModel/blob/main/README_files/correlation.jpg)
 
-After doing some initial analysis, I decided that the features to model around for the isFraud flag would be the amount, old and new balance origination/destination as well as the transaction type.
+After doing some initial analysis, I decided that the features to model around for the isFraud flag would be the amount, old and new balance origination/destination as well as one-hot encoding transaction type.
 
 ## Exploratory Data Analysis
 
