@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-There is a lack of public financial data for professionals to collaborate and share fraud insights amongst each other. The purpose of this experiment is to see whether or not modeling around synthetically derived data is viable in the industry and can potentially lead to more public collaboration to combat fraud. Additionally, we want to show that we can achieve a precision of >90% and a recall of >80% with this specific dataset.
+There is a lack of public financial data for professionals to collaborate and share fraud insights amongst each other. The purpose of this experiment is to see whether or not modeling around synthetically derived data is viable in a market where there is not a ton of readily accessible data. Additionally, we want to show that we can achieve a precision of >90% and a recall of >80% with this specific dataset.
 
 ## Dataset
 
